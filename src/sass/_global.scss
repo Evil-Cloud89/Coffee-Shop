@@ -1,0 +1,10 @@
+*, *::before, *::after {
+    box-sizing: border-box;
+  }
+
+body {
+  margin: 0;
+  font-family: $font-main;
+  color: $color-main;
+  max-width: 1920px;
+}
