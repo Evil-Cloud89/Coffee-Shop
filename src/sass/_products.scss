@@ -1,0 +1,92 @@
+.products {
+  margin-bottom: 96px;
+}
+
+.section-title {
+  text-align: center;
+  letter-spacing: 15px;
+  margin-bottom: 162px;
+
+  &::after{
+    position: absolute;
+    content: '';
+    left: 50%;
+    width: 777px;
+    height: 6px;
+    transform: translateX(-50%);
+    margin-top: 138px;
+    background: $color-main; 
+  }
+}
+
+.procuct-box {
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 84px;
+
+  &.reverse {
+    flex-direction: row-reverse;
+  }
+}
+
+.product-info {
+  display: flex;
+  flex-direction: column;
+  padding-top: 30px;
+  padding-left: 20px;
+
+  p {
+    align-self: flex-end;
+    margin-bottom: 55px;
+    margin-right: 20px;
+    letter-spacing: 0.38px;
+  }
+}
+
+/*.procuct-box-right {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 84px;
+}*/
+
+.product-title {
+  margin-bottom: 33px;
+  letter-spacing: 3.36px;
+
+  &::after{
+    position: absolute;
+    content: '';
+    left: 80px;
+    width: 109px;
+    height: 4px;
+    transform: translateX(-50%);
+    margin-top: 97px;
+    background: $color-main; 
+  }
+}
+
+.product-roasting, .product-intensity {
+  font-size: 20px;
+  letter-spacing: 1.4px;
+
+  span {
+    color: $color-main;
+  }
+}
+
+.product-foto {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  box-shadow: 0 0 34px 15px rgba(0, 0, 0, 0.28);
+}
+
+.most-popular::after {
+  position: absolute;
+  display: block;
+  content: "";
+  background: url(../images/Badge.png) no-repeat;
+  width: 100%;
+  height: 100%;
+  transform: translate(37%, 22%);
+}
