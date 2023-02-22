@@ -15,16 +15,16 @@
     <header class="header">
         <div class="container">
             <div class="row-header navbar navbar-dark bg-transparent">
-                <div class="header-wrapper">
+                <div class="header-wrapper col-md-8">
                     <div class="logo">
                         <h4 class="logo-title">El tigre</h4>
                         <h6 class="logo-subtitle">Venezuela coffee beans</h6>
                     </div>
                 </div>
-                <nav class="nav-wrapper">
-                    <a href="#home">HOME</a>
-                    <a href="#products">PRODUCTS</a>
-                    <a href="#contact">CONCACT</a>
+                <nav class="nav-wrapper col-md-4">
+                    <a href="#home">Home</a>
+                    <a href="#products">Products</a>
+                    <a href="#contact">Contact</a>
                 </nav>
             </div>
             <div class="row-title">
@@ -122,5 +122,27 @@
     <footer class="footer">
         <p>© 2023 EL TIGRE inc.</p>
     </footer>
+
+    <section class="contact">
+        <div class="container">
+          <h2 class="contact-title">Contact Us</h2>
+          <div class="row">
+            <form class="contact-form col-md-6">
+              <label for="name">Name</label>
+              <input type="text" name="name" id="name">
+              <label for="title">Title</label>
+              <input type="text" name="title" id="title">
+              <label for="message">Message</label>
+              <textarea type="text" name="message" rows="7" cols="7"></textarea>
+              <button class="button" type="submit" id="submit"><span>Submit</span></button>
+            </form>
+          </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <p>© 2023 EL TIGRE inc.</p>
+    </footer>
+
 </body>
 </html>
