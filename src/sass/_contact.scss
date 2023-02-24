@@ -2,23 +2,6 @@
   margin-bottom: 38px;
 }
 
-.contact-title {
-  text-align: center;
-  letter-spacing: 15px;
-  margin-bottom: 162px;
-
-  &::after{
-    position: absolute;
-    content: '';
-    left: 50%;
-    width: 777px;
-    height: 6px;
-    transform: translateX(-50%);
-    margin-top: 138px;
-    background: $color-main; 
-  }
-}
-
 .row {
   justify-content: center;
 }
@@ -69,5 +52,101 @@ button {
     font-weight: 700;
     letter-spacing: 6px;
     text-transform: uppercase;
+  }
+}
+
+@media (max-width: 575px) {
+  .contact-form {
+    input {
+      margin-left: 14%;
+      width: 330px;
+      height: 56px;
+      margin-bottom: 25px;
+      font-size: 20px;
+    }
+
+    label {
+      font-size: 20px;
+      font-weight: 700;
+      letter-spacing: 6px;
+      text-align: center;
+      text-transform: uppercase;
+      margin-bottom: 25px;
+    }
+
+    textarea {
+      margin-left: 14%;
+      width: 330px;
+      height: 120px;
+      margin-bottom: 25px;
+      font-size: 20px;
+    }
+  }
+
+  button {
+    background: $color-main;
+    width: 150px;
+    height: 50px;
+    border: none;
+    margin-left: 33.3333%;
+  
+    span {
+      width: 90px;
+      height: 20px;
+      color: $color-light;
+      font-family: $font-main;
+      font-size: 20px;
+      font-weight: 700;
+      letter-spacing: 6px;
+      text-transform: uppercase;
+    }
+  }
+}
+
+@media (min-width: 576px) and (max-width: 768px) {
+  .contact-form {
+    input {
+      margin-left: 11%;
+      width: 400px;
+      height: 56px;
+      margin-bottom: 25px;
+      font-size: 23px;
+    }
+
+    label {
+      font-size: 23px;
+      font-weight: 700;
+      letter-spacing: 6px;
+      text-align: center;
+      text-transform: uppercase;
+      margin-bottom: 25px;
+    }
+
+    textarea {
+      margin-left: 11%;
+      width: 400px;
+      height: 120px;
+      margin-bottom: 25px;
+      font-size: 23px;
+    }
+  }
+
+  button {
+    background: $color-main;
+    width: 150px;
+    height: 50px;
+    border: none;
+    margin-left: 35%;
+  
+    span {
+      width: 90px;
+      height: 20px;
+      color: $color-light;
+      font-family: $font-main;
+      font-size: 20px;
+      font-weight: 700;
+      letter-spacing: 6px;
+      text-transform: uppercase;
+    }
   }
 }
