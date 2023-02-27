@@ -21,7 +21,6 @@ class Product {
     
     productsWrapper[0].appendChild(thisProduct.element);
     productsWrapper[1].appendChild(thisProduct.element2);
-    
   }
 }
 
