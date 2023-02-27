@@ -43,7 +43,7 @@
 }
 
 @media (max-width: 575px) {
-  #home-about {
+  .home-about {
     position: relative;
     z-index: 1;
     width: 100%;
@@ -75,7 +75,7 @@
 }
 
 @media (min-width: 576px) and (max-width: 768px) {
-  #home-about {
+  .home-about {
     position: relative;
     z-index: 1;
     width: 100%;
