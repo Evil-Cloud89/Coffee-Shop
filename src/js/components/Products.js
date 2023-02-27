@@ -16,9 +16,11 @@ class Product {
   
     const generatedHTML = templates.products(thisProduct.data);
     thisProduct.element = utils.createDOMFromHTML(generatedHTML);
-
-    const productsWrapper = document.querySelector(select.containerOf.productsWrapper);
-    productsWrapper.appendChild(thisProduct.element);
+    thisProduct.element2 = utils.createDOMFromHTML(generatedHTML);
+    const productsWrapper = document.querySelectorAll(select.containerOf.productsWrapper);
+    
+    productsWrapper[0].appendChild(thisProduct.element);
+    productsWrapper[1].appendChild(thisProduct.element2);
     
   }
 }

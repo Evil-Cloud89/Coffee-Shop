@@ -90,64 +90,14 @@
         </section>
     </div>
 
-    <section class="products">
-        <h2 class="section-title">Products</h2>
-        <div class="container">
-            <div class="product-row">
-                <div class="procuct-box most-popular">
-                    <div class="product-info col-md-6">
-                        <h3 class="product-title">01. La Lagartija</h3>
-                        <p>Mysterious and treacherous... The best choice for<br>
-                            the start of your journey! It will provide you a rich<br>
-                            delicious flavor.
-                        </p>
-                        <h3 class="product-roasting">Roasting: <span>5/10</span></h3>
-                        <h3 class="product-intensity">Intensity: <span>6/10</span></h3>
-                    </div>
-                    <div class="product-image col-md-6">
-                        <img class="product-foto" src="./images/coffee-1.png" alt="lagartija">
-                    </div>
-                </div>
-                <div class="procuct-box reverse">
-                    <div class="product-info col-md-6">
-                        <h3 class="product-title">02. El Tigre</h3>
-                        <p>Really dark coffee, only for the real gourmets. It has<br>
-                            bitter flavor of grapefruits and is mixed with a little<br>
-                            bit of peanuts with caramel.
-                        </p>
-                        <h3 class="product-roasting">Roasting: <span>8/10</span></h3>
-                        <h3 class="product-intensity">Intensity: <span>9/10</span></h3>
-                    </div>
-                    <div class="product-image col-md-6">
-                        <img class="product-foto" src="./images/coffee-2.png" alt="tigre">
-                    </div>
-                </div>
-                <div class="procuct-box">
-                    <div class="product-info col-md-6">
-                        <h3 class="product-title">03. La Cucaracha</h3>
-                        <p>Sweet and intense with a big amount of different<br>
-                            flavors. Caramel,  grapes, strwaberry, you name it! It’s<br>
-                            great choice for warm summer days.
-                        </p>
-                        <h3 class="product-roasting">Roasting: <span>3/10</span></h3>
-                        <h3 class="product-intensity">Intensity: <span>7/10</span></h3>
-                    </div>
-                    <div class="product-image col-md-6">
-                        <img class="product-foto" src="./images/coffee-3.png" alt="cucaracha">
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
 
     <footer class="footer">
         <p>© 2023 EL TIGRE inc.</p>
     </footer>
 
     <script id="template-product" type="text/x-handlebars-template">
-        <div class="container">
             <div class="product-row">
-                <div class="procuct-box">
+                <div class="procuct-box {{additionalClass}}">
                     <div class="product-info col-md-6">
                         <h3 class="product-title">{{ id }} {{ name }}</h3>
                         <p class="product-description">{{{ description }}}</p>
@@ -159,7 +109,6 @@
                     </div>
                 </div>
             </div>
-        </div>
     </script>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.1.0/handlebars.min.js"></script>

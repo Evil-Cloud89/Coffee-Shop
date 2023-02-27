@@ -7,6 +7,7 @@
            "image": "../images/coffee-1.png",
            "roasting":"5/10",
            "intensity":"6/10",
+           "additionalClass": "most-popular",
            "award": "../images/Badge.png"
         },
         {
@@ -15,7 +16,8 @@
            "description":"Really dark coffee, only for the real gourmets. It has<br>bitter flavor of grapefruits and is mixed with a little<br>bit of peanuts with caramel.",
            "image": "../images/coffee-2.png",
            "roasting": "8/10",
-           "intensity": "9/10"
+           "intensity": "9/10",
+           "additionalClass": "reverse"
         },
         {
            "id":"03.",
